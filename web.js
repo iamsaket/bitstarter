@@ -5,7 +5,7 @@ app.use(express.logger());
 
 app.get('/', function(request, response) {
 buf=new Buffer(256);
-buf.write(fs.readFileSync('index.html'),'utf-8');  
+buf.write(fs.readFileSync('/home/ubuntu/bitstarter/index'),'utf-8');  
 response.send(buf.toString('utf-8'));
 });
 
