@@ -2,24 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My First Bitstarter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
-    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
-    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
-    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
-          rel="stylesheet" type="text/css">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>My First Bitstarter</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://raw.github.com/iamsaket/bitstarter/4a6a870c762cbd7452f70bf46970e031b7f3297c/carousel.css" rel="stylesheet">
+
+    <link href="https://www.dropbox.com/s/3jxp3q6c06q2v9p/bootstrap-glyphicons.css" rel="stylesheet">
+
+      <!-- Social buttons are not included in default Bootstrap. -->
+            <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
+     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">  
+
+      
+
     <style type="text/css">
 
-      /* Large desktop */
+     /* Large desktop */
       @media (min-width: 980px) { 
-        body {
-         padding-top: 60px;
-        }
-       .linediv-l {
+        .linediv-l {
          border-right: 1px white solid;
         }
        .linediv-r {
@@ -29,10 +36,7 @@
 
       /* Landscape phones and down */
       @media (max-width: 480px) { 
-       .copy {
-         padding: 2.5% 10%;
-       }
-       .linediv-l {
+        .linediv-l {
          border-bottom: 1px white solid;
        }
        .linediv-r {
@@ -40,27 +44,7 @@
        }
       }
 
-      /* All form factors */
-
-      /* Main body and headings */
-      body{
-        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-      }
-      .heading, .subheading {
-        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-        text-align: center;
-      }
-      p.lead {
-        padding-top: 1.5%;
-        font-size: 24px;
-        line-height: 30px;
-      }
-      p {
-        font-size: 18px;
-        line-height: 24px;
-      }
-
-      /* Video pitch and Action */
+    /* Video pitch and Action */
       .pitch {
         padding: 2.5% 0%;
       }
@@ -78,51 +62,99 @@
         color: white;
       }
 
-      /* Marketing Copy and Footer */
-      .copy {
-        padding-top: 2.5%;
-        padding-bottom: 2.5%;
-        text-align: justify;
+      /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
+       div.addthis_toolbox {
+        width:180px;
+       margin: 0 auto;
       }
-      .asset {
-        padding: 2.5% 0%;
-      }
-      .footer {
-        color: #cccccc;
-        text-align: center;
-      }
-      .footer p {
-        font-size: 11px;
-      }
-      .footer a {
-        color: #ccccff;
-      }
-    </style>
-  </head>
-  <body>
+      </style>
 
-    <!-- Mobile-friendly navbar adapted from example. -->
-    <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar"
-                  data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#">Bitstarter</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+      <!-- end video css -->
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+    	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+    	      <span class="icon-bar"></span>
+    	      <span class="icon-bar"></span>
+    	      <span class="icon-bar"></span>
+    	    </button>
+            <a class="navbar-brand" href="#">10ant</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Cities</a></li>
+                    <li><a href="#">WishList</a></li>
+                   <!-- <li class="divider"></li>
+                    <li class="nav-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li> -->
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+
       </div>
     </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="http://imgur.com/ANbNH76.jpg" alt=""> 
+          <div class="container">
+            <div class="carousel-caption">
+              <h1><b>10ant</b></h1>
+              <p>Find a perfect place to stay, rent or host over here. People can get in direct contact of the owners of the property which makes everything easier.</p>
+              <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://imgur.com/FtfawFi.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1><b>Another example headline.</b></h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://imgur.com/a7jFTxm.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more awesome reason.</h1>
+              <p><b>Our unique wish list feature will make sure that you get your perfect room to stay , get automatic notifications when a room gets vacated on your email or mobile.</b></p>
+              <p><a class="btn btn-large btn-primary" href="#">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
 
     <!-- We use row-fluid inside containers to achieve a resizable layout. -->
     <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
@@ -131,28 +163,18 @@
       <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
       <!-- www.google.com/fonts/specimen/Ubuntu -->
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
-      <div class="row-fluid heading">
-        <div class="span12">
-          <h1>Roomer</h1>
-        </div>
-      </div> 
-      <div class="row-fluid subheading">
-        <div class="span12">
-          <!-- Special typography from Bootstrap for lead paragraph. -->
-          <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">Finding a rented place was never so easy.</p>
-        </div>
-      </div>
-      <div class="row-fluid pitch">
-        <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://imgur.com/yaV2Rvz.jpg">
+        
+        <div class="row pitch">
+        <div class="col-lg-5 col-offset-1">
+          <img class="img-thumbnail" alt="Placeholder" src="http://placehold.it/480x290">
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
-        <div class="span5 actions">
-          <div class="span8 offset2">
-            <div class="statistics">
-              <div class="span4">
+        <div class="col-lg-5 actions">
+          <div class="row">
+          <div class="col-lg-8 col-offset-2">
+            <div class="row statistics">
+              <div class="col-lg-4 ">
                 <!-- linediv-l and linediv-r give dividing lines that look
                 different in horizontal and vertical layouts, illustrating
                 media queries. -->
@@ -160,168 +182,135 @@
                 <h3>1000</h3> <p>backers</p>
                 </div>
               </div>
-              <div class="span4">
+              <div class="col-lg-4 ">
                 <div class="linediv-c">
                   <h3>$6000</h3> <p>of $10,000</p>
                 </div>
               </div>
-              <div class="span4">
+              <div class="col-lg-4">
                 <div class="linediv-r">
                 <h3>10</h3> <p>days left</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="span10 offset1">
+          <div class="row">
+          <div class="col-lg-10 col-offset-1">
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
             <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 60%;"></div>
-              <div class="bar bar-warning" style="width: 40%;"></div>
+              <div class="progress-bar progress-bar-success" style="width: 60%;"></div>
+              <div class="progress-bar progress-bar-warning" style="width: 40%;"></div>
             </div>
           </div>
-          <div class="span6 offset3 order">
+          </div>
+          <div class="row">
+          <div class="col-lg-6 col-offset-3 order">
             <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
             <button class="btn btn-success btn-large">Preorder</button>
           </div>
-          <div class="span8 offset2 social">
+          </div>
+          <div class="row">
+          <div class="col-lg-8 col-offset-2 social">
+            <!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4"></a>
+<a class="addthis_button_compact"></a>
+<a class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51ffeea0247ac410"></script>
+<!-- AddThis Button END -->
             <!-- Social buttons are not included in default Bootstrap. -->
-            <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
+            <!-- See: http://noizwaves.github.io/bootstrap-social-buttons 
             <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-            <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+            <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button> -->
+          </div>
           </div>
         </div>
-      </div>
-
-      <!-- Beyond this part the marketing copy begins. -->
-      <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
-      <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
-      <!-- http://placehold.it -->
-      <div class="row-fluid section1">
-        <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://imgur.com/DVETbCj.jpg">
-        <!--  <a href="http://imgur.com/DVETbCj"><img src="http://i.imgur.com/DVETbCj.jpg" title="Hosted by imgur.com" /></a>-->
-        </div>
-        <div class="span5 copy">
-          <p>
-            Use the search page to find a property. Our search listing will 
-            definitely help you to find the perfect place to stay. Search 
-            will help you see the popular properties with reviews.
-            It will also help you to know what your facebook friends have 
-            to say about the place they were staying while living in the same
-            neighbourhood. Roomers can directly book the room without getting 
-            in contact with the third party which makes it hassle free.
-            Booking a room has been made very easy at Roomer.com.
-              
-
-          </p>
-        </div>
-      </div>
-
-      <div class="row-fluid section2">
-        <div class="span5 offset1 copy copy-right">
-          <p>
-            Add your place on our website for renting it out. It's completely
-            free to create a listing on Roomer. Get connected with roomers to
-            showcase your property.Get in touch with roomers directly through
-            our online communication chat.
-            You will always be in control of who books your place.
-            
-          </p>
-        </div>
-        <div class="span5 asset">
-          <img class="img-polaroid" src="http://imgur.com/SBzg7YP.jpg">
-        </div>
-      </div>
-
-
-      <div class="row-fluid section3">
-        <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://imgur.com/4rJHQ63.jpg">
-        </div>
-        <div class="span5 copy">
-          <p>
-            Our unique Wish List feature will help you to get the room of your choice.
-            If the room you like is currently not vacant just add it in your wish list and as soon
-            as the room gets vacated you will get an automatic email notification from Roomer.
-            You can even get notifications on-the-go by signing up for text message alerts or downloading the iPhone or Android app.
-            Don't believe , then give it a try.  
-
-          </p>
-        </div>
-      </div>
-      <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
-      <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
-      <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
-      <div class="row-fluid faq">
-          <div class="span10 offset1">
-            <h3>FAQ</h3>
-            <div class="accordion" id="accordion2">
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseOne">
-                    How do i find rooms on Roomer?
-                  </a>
-                </div>
-                <div id="collapseOne" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    <p><strong>1. Find a place.</strong></p>
-                    Searching on Roomer is easy! Wish Lists are a fun and visual way for you to save, share, browse, and discover your favorite Roomer listings from around the corner to around the world.Right now roomer is having listings available for India. We will soon be expanding our listing to more countries, & you will find so many options that will make you feel possibilities over here are endless.
-                    <p><strong>2. Book a space.</strong></p>
-                    Submit a reservation request by clicking the Book It button. Don’t worry, you won’t be charged
-                      for booking. Review your host once you have checked out. Voicing your experience is an essential part of building our trusted community
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseTwo">
-                    How do i rent room on Roomer?
-                  </a>
-                </div>
-                <div id="collapseTwo" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    <p><strong>1. Post your profile.</strong></p>
-                    Sign up, create a great profile, and upload a photo (or two or three!) of your room. Build your reputation by getting verified, and hit up your friends for some references.
-                    <p><strong>2. List your space.</strong></p>
-                    Just click the List Your Space button once you're signed in. Accurately describe your space and select the appropriate amenities to give potential guests a good idea of what your listing has to offer. Customize your pricing by adding a security deposit or cleaning fee to make sure all your needs are met.
-                    <p><strong>3. Book your space.</strong></p>
-                    Answer messages and reservation requests from prospective guests in a timely manner using the messaging system.
-                  </div>
-                </div>
-                <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseThree">
-                    Who can rent on Roomer?
-                  </a>
-                </div>
-                <div id="collapseThree" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    Almost anyone can be a host! It's free to sign up and list your space. Find out more about room types on Roomers
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-      </div>
-
-      <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
-      <!-- http://creativecommons.org/licenses/ -->
-      <div class="row-fluid footer">
-        <div class="span12">
-          <p>This work is licensed under
-            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
-              By-SA 3.0
-            </a>, without all the cruft that would otherwise be
-            put at the bottom of the page.</p>
         </div>
       </div>
     </div>
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+  </br>
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="http://placehold.it/140x140">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="http://placehold.it/140x140">
+          <h2>Heading</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="http://placehold.it/140x140">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image img-circle pull-right" src="http://imgur.com/ogyx5QQ.jpg" width="512" height="512">
+        <h2 class="featurette-heading">Advance property search <span class="text-muted">It'll blow your mind.</span></h2>
+        <p class="lead">Use the search page to find a property. Our search listing will definitely help you to find the perfect place to stay. Search will help you see the popular properties with reviews. Also see what your facebook friends have to say about the place they were staying while living in the same neighbourhood. Roomers can directly book the room without getting in contact with the third party which makes it hassle free.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image img-circle pull-left" src="http://placehold.it/512x512">
+        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image img-circle pull-right" src="http://placehold.it/512x512" width="512" height="512"">
+        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2013, Saket Khandelwal &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://raw.github.com/twbs/bootstrap/3.0.0-wip/dist/js/bootstrap.min.js"></script>
+    <script src="https://raw.github.com/twbs/bootstrap/3.0.0-wip/assets/js/holder.js"></script>
   </body>
 </html>
