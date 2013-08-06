@@ -9,10 +9,10 @@
     <title>My First Bitstarter</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="http://examples.getbootstrap.com/bootstrap/css/bootstrap.css" rel="stylesheet" type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="https://googledrive.com/host/0B1eZZ1NFB11bZWFQVFk4bE1XSjA" rel="stylesheet" type='text/css'>
+     <!--<link href="https://googledrive.com/host/0B1eZZ1NFB11bZWFQVFk4bE1XSjA" rel="stylesheet" type='text/css'>  --> 
 
     <!--<link href="https://www.dropbox.com/s/3jxp3q6c06q2v9p/bootstrap-glyphicons.css" rel="stylesheet" type='text/css'> -->
 
@@ -24,9 +24,8 @@
      <!-- <link href="https://googledrive.com/host/0B1eZZ1NFB11bR1N4MHF2bTRvSVk" media="screen" rel="stylesheet" type="text/css">
 
      <link href="https://googledrive.com/host/0B1eZZ1NFB11bRTFQcHI0ZHJGNW8" media="screen" rel="stylesheet" type="text/css"> 
-       <link href="../assets/css/bootstrap.css" rel="stylesheet">
-         <link href="../bootstrap/css/carousel.css" rel="stylesheet">
-   -->
+       <link href="../assets/css/bootstrap.css" rel="stylesheet">-->
+      <link href="http://examples.getbootstrap.com/carousel/carousel.css" rel="stylesheet" type='text/css'>   
       <style type="text/css">
 
      /* Large desktop */
@@ -48,6 +47,7 @@
          border-top: 1px white solid;
        }
       }
+
 
     /* Video pitch and Action */
       .pitch {
@@ -100,13 +100,13 @@
     <div class="navbar-wrapper">
       <div class="container">
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar navbar-inverse navbar-static-top">
           <div class="container">
-    	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-    	      <span class="icon-bar"></span>
-    	      <span class="icon-bar"></span>
-    	      <span class="icon-bar"></span>
-    	    </button>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
             <a class="navbar-brand" href="#">10ant</a>
             <div class="nav-collapse collapse">
               <ul class="nav navbar-nav">
@@ -143,7 +143,7 @@
     </div>
 
 
-    <!-- Carousel
+ <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide">
       <!-- Indicators -->
@@ -154,7 +154,7 @@
       </ol>
       <div class="carousel-inner">
         <div class="item active">
-          <img src="http://i.imgur.com/5dRi0Cs.jpg" alt=""> 
+          <img src="http://i.imgur.com/5dRi0Cs.jpg"  alt="">
           <div class="container">
             <div class="carousel-caption">
               <h1><b>10ant</b></h1>
@@ -167,9 +167,10 @@
           <img src="http://i.imgur.com/FtfawFi.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
-              <h1><b>Featuring places across the globe.</b></h1>
+              <h1>Featuring places across the globe.</h1>
               <div class="strokeme">
-              <p>Listing ranges from private room, shared room & even entire home/apartment . Our goal is to meet to your needs. Check out the reviews of each room .</p> </div>
+              <p> Check out the reviews of the place before you make the booking. What's more well, we even have reviews from your facebook friends who have already lived in the neighbourhood or are still living there.</p>
+              </div>
               <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
             </div>
           </div>
@@ -179,9 +180,10 @@
           <div class="container">
             <div class="carousel-caption">
               <h1><b>One more awesome reason.</b></h1>
-              <div class="strokeme">
-              <p>Our unique wish list feature will make sure that you get your perfect room to stay, get automatic notifications when a room gets vacated on your email or phone.</p> </div>
-              <p><a class="btn btn-large btn-primary" href="#">Sign up today</a></p>
+              
+              <p>Our unique Wish List feature will make sure that you get your perfect room to stay, get automatic notifications when a room gets vacated on your email or phone .</p>
+
+              <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
             </div>
           </div>
         </div>
@@ -199,14 +201,14 @@
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
         
         <div class="row pitch">
-        <div class="col-lg-5 col-lg-offset-1">
+        <div class="col-lg-5 col-offset-1">
           <img class="img-thumbnail" alt="Placeholder" src="http://placehold.it/480x300">
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
         <div class="col-lg-5 actions">
           <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
+          <div class="col-lg-8 col-offset-2">
             <div class="row statistics">
               <div class="col-lg-4 ">
                 <!-- linediv-l and linediv-r give dividing lines that look
@@ -229,7 +231,7 @@
             </div>
           </div>
           <div class="row">
-          <div class="col-lg-10 col-lg-offset-1">
+          <div class="col-lg-10 col-offset-1">
             <!-- Bootstrap progress bar 
              http://twitter.github.io/bootstrap/components.html#progress -->
 
@@ -240,20 +242,19 @@
           </div>
           </div>
           <div class="row">
-          <div class="col-lg-6 col-lg-offset-3 order">
+          <div class="col-lg-6 col-offset-3 order">
              <!-- Standard Bootstrap button. --> 
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
             <button class="btn btn-success btn-large">Preorder</button>
           </div>
           </div>
           <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 social">
+          <div class="col-lg-8 col-offset-2 social">
             <!-- AddThis Button BEGIN -->
 <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
 <a class="addthis_button_preferred_1"></a>
 <a class="addthis_button_preferred_2"></a>
-<a class="addthis_button_preferred_3"></a>
-<a class="addthis_button_preferred_4"></a>
+
 <a class="addthis_button_compact"></a>
 <a class="addthis_counter addthis_bubble_style"></a>
 </div>
@@ -288,7 +289,7 @@
         <div class="col-lg-4">
           <img class="img-rounded" src="http://i.imgur.com/NnOQ1vD.jpg">
           <h2>Rent your place</h2>
-          <p>10ant allows you to rent out apartment , shared rooms , private rooms on our website. It's free to sign up and with a built in community, your listing will be seen by a worldwide audience. Rent out your extra space over here effortlessly and make money.</p>
+          <p>10ant allows you to rent out private room, shared room & even entire home/apartment on our website. It's free to sign up and with a built in community, your listing will be seen by a worldwide audience. Rent out your extra space over here effortlessly and make money.</p>
           <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
@@ -357,9 +358,9 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-     <script src="https://googledrive.com/host/0B1eZZ1NFB11bSnRmMlR0MHNTVTA" type='text/javascript'></script>
+     <script src="http://examples.getbootstrap.com/assets/js/jquery.js" type='text/javascript'></script>
     <script src="https://googledrive.com/host/0B1eZZ1NFB11bcUFtdWNHdnBDTVk" type='text/javascript'></script>
-    <!-- <script src="https://googledrive.com/host/0B1eZZ1NFB11bT1N6UXlzNjBPYzg" type='text/javascript'></script> -->
+     <script src="http://examples.getbootstrap.com/assets/js/holder.js" type='text/javascript'></script> 
 
 
   
